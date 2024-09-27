@@ -1,16 +1,22 @@
 # WEB-SCRAPPING-WITH-R
-PROJECT: Web scrape a Global Bike-Sharing Systems Wiki Page With R
+Global Bike-Sharing Systems Data Collection
+This repository contains an R project aimed at web scraping data from the Global Bike-Sharing Systems Wiki page to collect information about various bike-sharing systems around the world. The collected data can be further analyzed for trends, geographic coverage, system capacity, and more.
 
+Project Overview
+The goal of this project is to:
 
-WHAT IS WEBSCRAPPING?
+Scrape data from the Wikipedia page containing information about bike-sharing systems globally.
+Process and clean the data to make it usable for analysis.
+Export the dataset for further analysis or visualization.
+Data Source
+The data is sourced from the publicly available Wikipedia page on Global Bike-Sharing Systems.
 
-
-Web scraping is the process of automatically extracting data from websites. This involves using software tools or scripts to collect information from web pages and convert it into a structured format, such as a spreadsheet or database. Web scraping can be used for various purposes, including market research, data analysis, and competitive intelligence
-
- Before getting my hands dirty on the actual data analysis tasks, i first needed to obtain some background and context information about well-known bike sharing systems worldwide, such as their location, launch date, rental bike size, and so on.
-
-i got such information from this Wiki page:
-
-https://en.wikipedia.org/wiki/List_of_bicycle-sharing_systems
-
-In this lab, you need to use the rvest library to obtain the bike sharing systems table from the above web page, convert the table into a data frame, and write the data frame to a csv file for future data wrangling and analysis tasks.
+Technologies Used
+R: For web scraping and data processing.
+rvest: R package for web scraping.
+dplyr: For data manipulation and cleaning.
+readr: For exporting data to CSV format.
+Features
+Web scraping using rvest to retrieve system information such as city, country, bike-sharing provider, launch date, and number of bikes.
+Data cleaning to remove missing or incomplete data points.
+Exporting the cleaned data to a CSV file.
